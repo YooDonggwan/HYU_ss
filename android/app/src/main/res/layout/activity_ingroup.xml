@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InGroup">
+
+    <TextView
+        android:id="@+id/group_goal"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/group_member"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="60dp"
+        android:text="그룹 목표"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/group_member"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/mRecyclerView"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="-178dp"
+        android:text="그룹원"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="180dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/lazy_king"
+        android:layout_width="330dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/mRecyclerView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>
