@@ -20,9 +20,9 @@
 
     <EditText
         android:id="@+id/yourGoal"
-        android:layout_width="234dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="193dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/text"

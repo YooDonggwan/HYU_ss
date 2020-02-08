@@ -35,18 +35,15 @@ class GoalAdapter(var activity: Activity,var list:List<GoalModel>) :RecyclerView
 
     override fun onBindViewHolder(holder: GoalViewHolder, position: Int) {
         holder.containerView.goalButton.setOnClickListener {
-            val nextIntent= Intent(activity,PhotoModel::class.java)
-           nextIntent.putExtra("number",position)
-            startActivity(activity,nextIntent,null)
+            val toIntent= Intent(activity,PhotoModel::class.java)//nextIntent->toIntent
+           toIntent.putExtra("number",position)
+            startActivity(activity,toIntent,null)
         }
         if(list[position].Picture!=null){
             holder.containerView.goalCheck.setChecked(true)
+            holder.containerView.goalButton.setEnabled(false)
         }
-//        holder.containerView.goalCheck.setOnTouchListener(object: View.OnTouchListener{
-//            override fun onTouch(v: View?, event: MotionEvent?): Boolean {
-//                return true
-//            }
-//        })
+
 
         holder.containerView.textView.text = list[position].goaltext
 

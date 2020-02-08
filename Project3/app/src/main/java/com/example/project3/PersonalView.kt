@@ -1,8 +1,8 @@
 package com.example.project3
 
 
+
 import android.content.DialogInterface
-import android.content.Intent
 
 import android.os.Bundle
 import android.widget.EditText
@@ -10,18 +10,22 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+
 import kotlinx.android.synthetic.main.activity_main.*
 
 
 
 class PersonalView:AppCompatActivity(){
-companion object{
-    var goalList = mutableListOf<GoalModel>(GoalModel("안녕하세요"))
+
+    companion object{
+    var goalList = mutableListOf<GoalModel>()
 }
+    var adapter = GoalAdapter(this, goalList)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var adapter = GoalAdapter(this, goalList)
+        whoGoal.setText("김기범님의 목표")
+        //권한 체크
         IntegerList.adapter = adapter
         IntegerList.layoutManager = LinearLayoutManager(this)
 
@@ -46,7 +50,16 @@ companion object{
             alert.show()
         }
 
-    }}
+    }
+
+    override fun onResume() {
+        super.onResume()
+        adapter.notifyDataSetChanged()
+    }
+
+}
+
+
 
 
 
