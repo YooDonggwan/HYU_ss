@@ -1,4 +1,4 @@
-package com.example.project3
+package com.example.takegoal
 
 
 import android.app.Activity
@@ -10,7 +10,6 @@ import android.content.Intent
 
 
 import android.view.View
-import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.core.content.ContextCompat.startActivity
 import kotlinx.android.synthetic.main.upload_sample.view.*
 

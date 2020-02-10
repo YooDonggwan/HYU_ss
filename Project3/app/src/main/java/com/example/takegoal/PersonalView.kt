@@ -1,4 +1,4 @@
-package com.example.project3
+package com.example.takegoal
 
 
 
@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import kotlinx.android.synthetic.main.activity_main.*
-
+import kotlinx.android.synthetic.main.personal_goal.*
 
 
 class PersonalView:AppCompatActivity(){
@@ -23,7 +23,7 @@ class PersonalView:AppCompatActivity(){
     var adapter = GoalAdapter(this, goalList)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.personal_goal)
         whoGoal.setText("김기범님의 목표")
         //권한 체크
         IntegerList.adapter = adapter

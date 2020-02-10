@@ -1,4 +1,4 @@
-package com.example.project3
+package com.example.takegoal
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView

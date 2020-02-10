@@ -1,4 +1,4 @@
-package com.example.project3
+package com.example.takegoal
 
 import android.graphics.Bitmap
 

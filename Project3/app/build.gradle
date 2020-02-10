@@ -8,7 +8,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
     defaultConfig {
-        applicationId "com.example.project3"
+        applicationId "com.example.takegoal"
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 1

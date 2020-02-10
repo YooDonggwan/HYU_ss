@@ -33,7 +33,7 @@ class InGroup : AppCompatActivity() {
         mRecyclerView.setHasFixedSize(true)
 
         // 벌점을 확인하고 달마다 벌점 가장 높은 사람 선정하기
-        val plus_demerit = Intent
+        //val plus_demerit = Intent
 
         val lazyking_name = ""
         lazy_king.setText("이 달의 게으름 왕 : ")
