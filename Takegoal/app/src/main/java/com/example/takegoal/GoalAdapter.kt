@@ -37,11 +37,10 @@ class GoalAdapter(var activity: Activity,var list:List<GoalModel>) :RecyclerView
         }
         if(list[position].Picture!=null){
             holder.containerView.goalCheck.setChecked(true)
-            holder.containerView.goalButton.setEnabled(false)
         }
-
-
         holder.containerView.textView.text = list[position].goaltext
+        holder.containerView.when_Take.text=list[position].when_takegoal
+
 
 
     }

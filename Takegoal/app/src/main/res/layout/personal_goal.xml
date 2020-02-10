@@ -21,8 +21,8 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/IntegerList"
-        android:layout_width="431dp"
-        android:layout_height="527dp"
+        android:layout_width="509dp"
+        android:layout_height="626dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,12 +30,13 @@
 
     <Button
         android:id="@+id/addButton"
-        android:layout_width="103dp"
-        android:layout_height="68dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="40dp"
-        android:text="추가"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="99dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/untitled"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

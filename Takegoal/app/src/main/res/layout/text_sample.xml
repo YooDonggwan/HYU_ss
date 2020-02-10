@@ -22,6 +22,8 @@
         android:id="@+id/yourGoal"
         android:layout_width="193dp"
         android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
