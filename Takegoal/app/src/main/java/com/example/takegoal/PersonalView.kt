@@ -1,7 +1,6 @@
 package com.example.takegoal
 
 
-
 import android.app.DatePickerDialog
 import android.content.DialogInterface
 import android.os.Build
@@ -17,22 +16,12 @@ import kotlinx.android.synthetic.main.personal_goal.*
 
 
 class PersonalView:AppCompatActivity(){
-
-    companion object{
-    var goalList = mutableListOf<GoalModel>()
-}
-    var adapter = GoalAdapter(this, goalList)
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.personal_goal)
-
-
-
-        whoGoal.setText("김기범님의 목표")
-        //권한 체크
-        IntegerList.adapter = adapter
-        IntegerList.layoutManager = LinearLayoutManager(this)
+        var id=getIntent().getIntExtra("member",-1)
+        whoGoal.setText("${InGroup.memberList[id].name}님의 목표")
         addButton.setOnClickListener {
             val alert = AlertDialog.Builder(this)
             alert.setTitle("당신의 목표를 입력하세요")
@@ -45,11 +34,9 @@ class PersonalView:AppCompatActivity(){
                 var dateCheck=DatePickerDialog(this)
                 dateCheck.setOnDateSetListener(object:DatePickerDialog.OnDateSetListener{
                     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
-
                         var goalid: EditText = myview.findViewById(R.id.yourGoal)
-                        var Choose_date="~ ${year}년 ${month}월 ${dayOfMonth}일"
-                        goalList.add(GoalModel(goalid.text.toString(),when_takegoal =Choose_date))
-                        adapter.notifyDataSetChanged()
+                        var Choose_date=" ~${year}-${String.format("%02d",month+1)}-${String.format("%02d",dayOfMonth)}"
+                        InGroup.memberList[id].Goal_List.add(GoalModel(goalid.text.toString(),when_takegoal =Choose_date))
                         Toast.makeText(this@PersonalView, "저장되었습니다", Toast.LENGTH_SHORT).show()
 
                     }
@@ -67,15 +54,11 @@ class PersonalView:AppCompatActivity(){
 
     override fun onResume() {
         super.onResume()
-        adapter.notifyDataSetChanged()
+        var id=getIntent().getIntExtra("member",-1)
+        var adapter =GoalAdapter(this, InGroup.memberList[id].Goal_List,id)
+        IntegerList.adapter = adapter
+        IntegerList.layoutManager = LinearLayoutManager(this)
 
     }
 
 }
-
-
-
-
-
-
-

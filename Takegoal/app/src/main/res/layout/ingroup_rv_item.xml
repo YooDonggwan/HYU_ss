@@ -38,12 +38,33 @@
         android:id="@+id/demerit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_marginLeft="200dp"
-        android:gravity="center_vertical"
         android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
         android:text="벌점"
         android:textSize="17sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Points"
+        android:layout_width="27dp"
+        android:layout_height="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="21dp"
+        android:layout_toEndOf="@+id/demerit"
+        android:layout_toRightOf="@+id/demerit"
+        android:gravity="center"
+        android:textSize="17sp" />
 
 
 </RelativeLayout>

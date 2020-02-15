@@ -4,6 +4,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +16,7 @@
         <activity android:name="com.example.takegoal.PersonalView"/>
         <activity android:name="com.example.takegoal.InGroup" />
         <activity android:name="com.example.takegoal.MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

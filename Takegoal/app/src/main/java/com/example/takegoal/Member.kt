@@ -1,6 +1,10 @@
 package com.example.takegoal
 
-class Member(val name : String, val slogan : String, val photo : String) {
+import java.io.Serializable
+
+class Member(val name : String, val slogan : String, val photo : String,var point:Int=0,
+             val Goal_List: ArrayList<GoalModel>, val id:Int
+             ) {
 
 
 }

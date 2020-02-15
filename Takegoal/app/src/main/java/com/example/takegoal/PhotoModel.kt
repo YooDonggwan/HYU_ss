@@ -12,24 +12,19 @@ import android.provider.MediaStore
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-
 import com.gun0912.tedpermission.PermissionListener
 import com.gun0912.tedpermission.TedPermission
 import kotlinx.android.synthetic.main.upload_sample.*
-import kotlinx.android.synthetic.main.upload_sample.view.*
-
 import java.io.IOException
-import java.time.LocalDate
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-
 import java.util.*
 import android.graphics.Bitmap as Bitmap
 
 class PhotoModel:AppCompatActivity(){
     var flag:Int?=null
 
-//    var imageFilePath:String?=null
+    //여기도 이름정보를 가져와서 데이터베이스에서 가져오기
    val permissionListener=object: PermissionListener {
         override fun onPermissionGranted() {
             Toast.makeText(getApplicationContext(),"카메라 권한이 허용됨",Toast.LENGTH_SHORT).show()
@@ -37,13 +32,12 @@ class PhotoModel:AppCompatActivity(){
         override fun onPermissionDenied(deniedPermissions: ArrayList<String>?) {
             Toast.makeText(getApplicationContext(),"권한이 거부됨",Toast.LENGTH_SHORT).show()
         }
-    }
-
+}
     override fun onCreate(savedInstanceState: Bundle?) {
-        var num: Intent = getIntent()
-        var number = num.getIntExtra("number", -1)
-        super.onCreate(savedInstanceState)
+              super.onCreate(savedInstanceState)
         setContentView(R.layout.upload_sample)
+        var number = getIntent().getIntExtra("number", -1)
+        var id=getIntent().getIntExtra("id",-1)
         //권한요청
         TedPermission.with(getApplicationContext()).setPermissionListener(permissionListener)
             .setRationaleMessage("권한이 허용되었습니다.")
@@ -61,7 +55,6 @@ class PhotoModel:AppCompatActivity(){
         }
         cameraButton.setOnClickListener {
             flag=1
-
             val camerIntent: Intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(camerIntent, number)
         }
@@ -70,45 +63,46 @@ class PhotoModel:AppCompatActivity(){
 
     override fun onResume() {
         super.onResume()
-        var num:Intent=getIntent()
-        var number=num.getIntExtra("number",-1)
-        goalPicture.setImageBitmap(PersonalView.goalList[number].Picture)
-        timeView.text=PersonalView.goalList[number].timeCheck
+        var number = getIntent().getIntExtra("number", -1)
+        var id=getIntent().getIntExtra("id",-1)
+        goalPicture.setImageBitmap(InGroup.memberList[id].Goal_List.get(number).Picture )
+        timeView.text=  InGroup.memberList[id].Goal_List.get(number).timeCheck
     }
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        var num:Intent=getIntent()
-        var number=num.getIntExtra("number",-1)
+        var number = getIntent().getIntExtra("number", -1)
+        var id=getIntent().getIntExtra("id",-1)
+        var picture= InGroup.memberList[id].Goal_List.get(number).Picture
         if(resultCode== Activity.RESULT_OK||requestCode!=-1) {
             var confirmalert = AlertDialog.Builder(this)
             confirmalert.setIcon(R.mipmap.ic_launcher)
             confirmalert.setMessage("등록하시겠습니까?\n(단! 등록 시간은 현재로됩니다)")
             confirmalert.setNegativeButton("아니오") { dialogInterface: DialogInterface, i: Int ->
-                PersonalView.goalList[number].Picture = null
+                picture = null
             }
             confirmalert.setPositiveButton("네") { dialogInterface: DialogInterface, i: Int ->
                 if (resultCode == Activity.RESULT_OK && requestCode != -1) {
                     if (flag == 1) {
                         var extra: Bundle? = data?.extras
                         var bitmap2 = extra?.get("data") as Bitmap
-                        PersonalView.goalList[number].Picture = bitmap2
+                        picture = bitmap2
                     } else if (flag == 0) {
                         var currentImage: Uri? = data?.data
                         try {
                             var bitmap =
                                 MediaStore.Images.Media.getBitmap(contentResolver, currentImage)
-                            PersonalView.goalList[number].Picture = bitmap
+                            picture = bitmap
                         } catch (e: IOException) {
                             e.printStackTrace()
                         }
                     }
                 }
-                goalPicture.setImageBitmap(PersonalView.goalList[number].Picture)
+                InGroup.memberList[id].Goal_List.get(number).Picture=picture
+                goalPicture.setImageBitmap(picture)
                 val formatter = DateTimeFormatter.ofPattern("yy년 MM월 dd일 HH시 mm분 등록")
-                PersonalView.goalList[number].timeCheck = LocalDateTime.now().format(formatter)
-                timeView.setText(PersonalView.goalList[number].timeCheck)
-
+                InGroup.memberList[id].Goal_List.get(number).timeCheck = LocalDateTime.now().format(formatter)
+                timeView.setText(InGroup.memberList[id].Goal_List.get(number).timeCheck)
             }
             confirmalert.show()
         }}
