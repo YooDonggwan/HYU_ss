@@ -13,12 +13,17 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_ingroup.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
+
 class InGroup : AppCompatActivity() {
     companion object {
     var memberList = arrayListOf<Member>(
         // 그룹에 가입을 할 경우 이 리스트로 들어오도록 해야 함
-        Member("Yoo", "I can do", "", Goal_List = ArrayList<GoalModel>(),id=0),
-        Member("Hwang", "Pass", "", Goal_List = ArrayList<GoalModel>(),id=1)
+        Member("Yoo", "I can do", "", Goal_List = ArrayList<GoalModel>()),
+        Member("Hwang", "Pass", "", Goal_List = ArrayList<GoalModel>())
     )
         var groupList=arrayListOf<GoalModel>()
     }
@@ -28,6 +33,27 @@ class InGroup : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ingroup)
+        var retrofit= Retrofit.Builder()
+            .baseUrl("http://34.68.58.172:22")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        var server=retrofit.create(HowService::class.java)
+        instantButton.setOnClickListener {
+            server.getRequest("하올").enqueue(object: Callback<Response>{
+                override fun onFailure(call: Call<Response>, t: Throwable) {
+
+                }
+
+                override fun onResponse(
+                    call: Call<Response>,
+                    response: retrofit2.Response<Response>
+                ) {
+                    println("안녕")
+
+                }
+
+
+            } )       }
         var adapter=GroupGoalAdapter(groupList,this)
         groupView.adapter=adapter
         groupView.layoutManager=LinearLayoutManager(this)
@@ -73,7 +99,7 @@ class InGroup : AppCompatActivity() {
         val rvAdapter = InGroupRvAdapter(this, memberList) {member ->
             // 람다식이 맨 마지막 인자이기 때문에 소괄호 밖에서 꺼내어 중괄호로 따로 만듦
             val personalActivity_intent = Intent(this, PersonalView::class.java)
-            personalActivity_intent.putExtra("member",member.id)
+//            personalActivity_intent.putExtra("member",)
             //personalActivity_intent.putExtra() //여기에서 member안의 정보를 전달해주면 될듯함
             startActivity(personalActivity_intent)
         }

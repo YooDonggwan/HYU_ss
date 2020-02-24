@@ -44,7 +44,7 @@ class InGroupRvAdapter(val context : Context, val memberList : ArrayList<Member>
 
             // 이름과 슬로건 연결
             member_name?.text = member.name
-            member_slogan?.text = member.slogan
+            //member_slogan?.text = member.slogan
             member_demerit?.text=member.point.toString()
             itemView.setOnClickListener {
                 itemClick(member)
