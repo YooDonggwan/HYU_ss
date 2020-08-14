@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\swiperefreshlayout\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="19e63f5c3afd0a4379bfb830816bb8a9661aba75">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-swiperefreshlayout-28.0.0_9a164503e53d1bd94e2c652df70ce5d07f3a084f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\print\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="376a25a3bdce5133262368e85d430aae5bb80c28">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-print-28.0.0_3a4a5ef219d7ea190a841c06eea46e1d67362749.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\cursoradapter\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="b9aff7eec7a0b091e460e44b8bb0bf64cadc0844">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-cursoradapter-28.0.0_c2592a85d85da5204c043a63afe00e8992c3e935.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\localbroadcastmanager\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="7b15ada2209f82b0249f331cb7ec70394dc2e828">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-localbroadcastmanager-28.0.0_b56aa856ecc687aaa768fe36aee011b5316ff411.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="b99e6cdcb85894164e1a06145a5f6b78e3cb7270">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-28.0.0_3e319986a82546c7a8a5f5d604b0a95d82c23a25.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\loader\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="49b8af59d5819c80792707bdda93a5c9a917e24c">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-loader-28.0.0_481dc57f724cc89ec9cac646efe07ec3adf08335.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\libs\libDaumMapAndroid.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="6cc9a40ec9adc5cb2872b6d683687c1a66f6fbc2">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\libDaumMapAndroid_2446a5984df939a406d134201691b8bd83b46651.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\android.arch.lifecycle\livedata\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="9335f203759bfcda4b6ea729dddcf06c07150d3f">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\android.arch.lifecycle-livedata-1.1.1_c035ad6f0206222bc41a2d4fee15a92e0e7515a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="b05ce31f5d87a7f16cdbdbc5e3a7cf2190bf0118">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-28.0.0_3d8c898cb88ddbf55c8cfad54b75ff013282bc5d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="ada02cfa6d6403e90138de411c67d8f6763b3018">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-28.0.0_95c47aa377814d4a06b55b4f3c6ef8ccf261e1f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\.gradle\caches\modules-2\files-2.1\com.android.support\collections\28.0.0\c1bcdade4d3cc2836130424a3f3e4182c666a745\collections-28.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="c1bcdade4d3cc2836130424a3f3e4182c666a745">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\collections-28.0.0_08111aa7fe118cb3436035f050713a4a0bba4bc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\support-compat\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="ddfc0d219f43bf3c1e357a55284cbd1000e461bf">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-28.0.0_69f42ef970997045d3a736fb059992529c352bdc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\documentfile\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="e9b03dd36d3c106574e2cdeb8edd543bd5e51d0e">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-documentfile-28.0.0_a1c136e7ec551620787e84c2eeb8da8ef6a8cfc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\asynclayoutinflater\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="8510837b7e70ee5f12cf2a20dd0a1b3d23a0cdeb">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-asynclayoutinflater-28.0.0_7a725c64f67139789e7b64e64ea4bba995fd0572.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.1.1\207a6efae6a3555e326de41f76bdadd9a239cbce\common-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="207a6efae6a3555e326de41f76bdadd9a239cbce">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\common-1.1.1_fccb0b1e8f2d0fd73fa76666a2c7e1066852055d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\viewpager\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="be31b531309a9196873ba4ac96ea9484ca0ecad6">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-viewpager-28.0.0_581737e7916d1b7a6f782e1edf1b3af213021174.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\versionedparcelable\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="2e85417e7990657be8fe07d63fd5278d82eb960e">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-versionedparcelable-28.0.0_93843df12188f0f86cc9cc26b82d02687dd3eb46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\drawerlayout\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="fad505737146925636e28753e26523c3a8a03e48">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-drawerlayout-28.0.0_b4669fe9e145544e0ac3436dd912d8bbb1c26c7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\android.arch.core\runtime\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="afb9ac89f722ac83466f1bb5f2135010b7f05f32">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\android.arch.core-runtime-1.1.1_f4022e0e19828736696513610d6802d87541f63e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.1.1\e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95\common-1.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\common-1.1.1_849d8898a1fa85dfc9864b528338737880062365.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\android.arch.lifecycle\viewmodel\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="de467de1baba33a922246561f87c0a910206d1ff">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\android.arch.lifecycle-viewmodel-1.1.1_67c04644554aadbb56df9c04b127d74366fb73aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\customview\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="925ec89d545e33030131b9470db85e701a8c61a4">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-customview-28.0.0_5ce64dd54b14416fb0fb160269919459abf82b02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\coordinatorlayout\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="a6d4c3181151ffbcd67897e94c688f6c200c5bec">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-coordinatorlayout-28.0.0_6df043465c7ddd8af045600a47c04f652c1d52ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\android.arch.lifecycle\livedata-core\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="b1173d9f45ae18f2e0dc8ec42d15fa5b95c391d1">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\android.arch.lifecycle-livedata-core-1.1.1_5749646df8edefe95de0ee98eb9adcd9f46504e5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\support-fragment\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="5b049b5525643f62ebe162013dae975c7e74dcc5">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-28.0.0_ecfd57447bd81b824472d4fad0169ded4dc6ae05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\interpolator\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="70bf65523dc3db43f6c3749931976585a8f4dd20">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-interpolator-28.0.0_1d0762450c03d57a0fa5945cecb0d13cfb1a33ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\28.0.0\ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8\support-annotations-28.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\support-annotations-28.0.0_f8490de2abd3e0138525763db533f885eec3048e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="a69067467c7e4d5c810ea19ee43cbfab00a292b4">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\android.arch.lifecycle-runtime-1.1.1_d7263a507aa3d235b748e5f62a7633ff73727168.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\exploded-aar\com.android.support\slidingpanelayout\28.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.1"
+        sha1="41b8c7e99024d4288d7dfc709bb72fdaa5fdc32f">
+        <dex dex="C:\Users\rlqja\AndroidStudioProjects\Android_DaumMap_Sample_1.4.1.0\app\build\intermediates\pre-dexed\debug\com.android.support-slidingpanelayout-28.0.0_f66b461b2f320b5b16bb2e61d263427b32aa8c0c.jar" />
+    </item>
+
+</items>
