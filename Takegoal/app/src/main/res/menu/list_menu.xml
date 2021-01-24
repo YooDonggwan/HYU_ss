@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="그룹검색"
+        android:id="@+id/search"
+        android:icon="@drawable/search"
+        app:showAsAction="always"
+ />
+    <item
+
+        android:title="add"
+        android:icon="@drawable/addbutton"
+        android:id="@+id/addbutton"
+        app:showAsAction="always"
+        />
+
+
+</menu>
